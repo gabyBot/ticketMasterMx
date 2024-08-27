@@ -1,21 +1,8 @@
-import { useState } from "react";
 import "./App.css";
-import Navbar from "./components/navbar";
-import Events from "./components/events";
+import Routes from "./routes";
 
 function App() {
-  const [searchVal, setSearchVal] = useState('');
-
-  const handleNavBarSearch = (value) => {
-    setSearchVal(value);
-  };
-  return (
-    <>
-      <Navbar onSearch={handleNavBarSearch} />
-      <Events searchValue={searchVal} />
-      
-    </>
-  );
+  return <Routes />;
 }
 
 export default App;
